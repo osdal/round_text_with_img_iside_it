@@ -12050,11 +12050,14 @@ section .text span {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 500px;
+  width: 900px;
 }
 
 .logo_container {
+  display: flex;
+  position: absolute;
   width: 500px;
+  height: 50%;
   background-color: #fd7e14;
 }
 
@@ -12069,17 +12072,22 @@ section .text span {
 }
 .titleName span {
   height: 50%;
-  font-size: 50px;
-  background-color: #6ea8fe;
+  font-size: 70px;
+  background-color: #084298;
   position: absolute;
   transform-origin: bottom center;
   line-height: 100%;
+  color: #fff;
 }
 
 .round-image-container {
-  width: 200px; /* Задайте желаемую ширину */
-  height: 200px; /* Задайте желаемую высоту */
+  width: 300px; /* Задайте желаемую ширину */
+  height: 300px; /* Задайте желаемую высоту */
   border-radius: 50%;
   background-size: cover; /* Изображение будет адаптировано и обрезано, чтобы заполнить контейнер */
   background-position: center center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }/*# sourceMappingURL=style.css.map */
