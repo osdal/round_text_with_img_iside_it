@@ -1,52 +1,4 @@
 window.addEventListener("load", (event) => {
-	// //присвоение переменной элемента текст
-	// const text = document.querySelector('.text');
-	// //разбивка текста на буквы
-	// text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
-
-	// let element = document.querySelectorAll('span');
-	// // console.log(element);
-	// for (let i = 0; i < element.length; i++) {
-	// 	element[i].style.transform = "rotate(" + i * 18 + "deg)";
-	// }
-
-	// let phrase = document.querySelector('#simple_arc');
-
-	// // Получаем текущий текст из блока
-	// var currentText = phrase.textContent;
-
-	// // Добавляем . в конец текста
-	// var newText = currentText + ".";
-
-	// // Устанавливаем новый текст в блок
-	// // phrase.textContent = newText;
-
-	// new CircleType(phrase);
-
-	// // Получаем все <span> элементы внутри блока
-	// var spanElements = phrase.getElementsByTagName("span");
-
-	// console.log(spanElements);
-
-	// // Проходимся по всем <span> элементам и заменяем текст пробела на иконку звездочки
-	// for (var i = 0; i < spanElements.length; i++) {
-	// 	if (spanElements[i].textContent === ".") {
-	// 		spanElements[i].innerHTML = "&#9733;"; // Звездочка в виде HTML-кода
-	// 	}
-	// }
-	// for (var i = 0; i < spanElements.length; i++) {
-	// 	if (spanElements[i].textContent === "&nbsp;") {
-	// 		spanElements[i].innerHTML = "&#9733;"; // Звездочка в виде HTML-кода
-	// 	}
-	// }
-
-	// Создаем новый <span> элемент с текстом пробела
-	// var spaceSpan = document.createElement("span");
-	// spaceSpan.textContent = " ";
-
-	// Добавляем новый <span> элемент с пробелом в конец блока
-	// phrase.appendChild(spaceSpan);
-
 
 	// -----------------------------------------------
 	let name = document.querySelector('.titleName');
@@ -73,6 +25,15 @@ window.addEventListener("load", (event) => {
 			console.log(spanElements[i].textContent);
 		}
 	}
+
+	const element = document.querySelector('.logo_container');
+	const width = element.clientWidth;
+	const height = element.clientHeight;
+	console.log(`Ширина: ${width}px, Высота: ${height}px`);
+
+	let image = document.querySelector('.round-image-container');
+	image.style.width = image.style.height = width * 1.1 + 'px';
+	console.log(image.style.width);
 
 
 

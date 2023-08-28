@@ -4,6 +4,7 @@
  * Copyright 2011-2023 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300;600&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -11971,76 +11972,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.block-1 {
-  color: #b02a37;
-}
-
-.block-1 {
-  background-color: #dc3545;
-}
-
-.block-2 {
-  background-color: #0d6efd;
-}
-
-.block-3 {
-  background-color: #198754;
-}
-
-.block-4 {
-  background-color: #fd7e14;
-}
-
-.block-5 {
-  background-color: #6f42c1;
-}
-
-.block-6 {
-  background-color: #ffc107;
-}
-
-.text-section {
-  display: flex;
-  position: relative;
-  min-height: 30vh;
-  background: #ffeb3b;
-  overflow: hidden;
-}
-
-.text {
-  position: absolute; /*абсолютное позиционирование*/
-  font-size: 2em;
-  color: #37474f;
-  text-align: center;
-  pointer-events: none; /*не применять событие мыши*/
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none; /*запрет на выбор текста*/
-}
-
-section .text span {
-  position: absolute;
-  top: -100px;
-  text-transform: uppercase;
-  display: inline-block; /*отображать как блочно-строчный*/
-  transform-origin: 0 100px; /*откуда начинать трансформацию*/
-}
-
-#simple_arc {
-  display: flex;
-}
-
-.curve_text {
-  display: flex;
-}
-.curve_text span {
-  font-size: 50px;
-}
-
-.curve_text_row {
-  height: 30vh;
-}
-
 .handle_row {
   height: 40vh;
   background-color: #ffe69c;
@@ -12050,19 +11981,19 @@ section .text span {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 900px;
+  width: 500px;
 }
 
 .logo_container {
   display: flex;
   position: absolute;
-  width: 500px;
+  width: 400px;
   height: 50%;
-  background-color: #fd7e14;
+  background-color: #ffe5d0;
 }
 
 .titleName {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Martian Mono", monospace;
   height: 100%;
   width: 100%;
   display: flex;
@@ -12081,8 +12012,6 @@ section .text span {
 }
 
 .round-image-container {
-  width: 300px; /* Задайте желаемую ширину */
-  height: 300px; /* Задайте желаемую высоту */
   border-radius: 50%;
   background-size: cover; /* Изображение будет адаптировано и обрезано, чтобы заполнить контейнер */
   background-position: center center;
