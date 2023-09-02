@@ -17,7 +17,7 @@ window.addEventListener("load", (event) => {
 	console.log(`Ширина: ${width}px, Высота: ${height}px`);
 
 	let spanElements = name.getElementsByTagName('span');
-	let fs = width * 0.12;
+	let fs = width * 0.12;//Величина шрифта
 
 	for (i = 0; i < spanElements.length; i++) {
 		spanElements[i].style.transform = "rotate(" + (i + 1) * 360 / spanElements.length + "deg)";
